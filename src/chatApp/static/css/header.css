@@ -1,0 +1,94 @@
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dac9c9;
+    color: #423b3b;
+    padding: 10px 20px;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: #423b3b; /* Adjusting color to match header color */
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search input {
+    padding: 8px; /* Adjusting padding for better input size */
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f2f5; /* A light grey background similar to WhatsApp */
+    color: #333; /* Dark text color for contrast */
+    width: calc(100% - 70px); /* Adjusting input width to accommodate button */
+  }
+  
+  .search button {
+    padding: 8px 15px; /* Adjusting padding for better button size */
+    border: none;
+    border-radius: 5px;
+    background-color: #009688; /* A shade of green similar to WhatsApp */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Adding transition for smooth hover effect */
+  }
+  
+  .search button:hover {
+    background-color: #00796b; /* Darker shade of green on hover */
+  }
+  
+  .user {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user .profile img {
+    width: 30px;
+    height: 30px; /* Adjusting height to match width for a circular shape */
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user .options a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #423b3b; /* Adjusting color to match header color */
+  }
+  
+  .messages a img, 
+  .notifications a img {
+    width: 30px;
+    height: 30px; /* Adjusting height to match width for a circular shape */
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+
+  .messages a,
+  .notifications a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #423b3b; /* Adjusting color to match header color */
+  }
+  
+  /* Media Queries for Enhanced Responsiveness */
+  @media (max-width: 1024px) {
+    .search input {
+      width: calc(100% - 60px); /* Adjusting input width for smaller screens */
+    }
+  }
+  
